@@ -12,7 +12,11 @@ Horent is a real estate renting dashboard designed to simplify property manageme
 - Responsive Design – Optimized for desktop and mobile use.
 
 🚀 Tech Stack
-Frontend: (React, React Router, TailwindJS)
-Backend: (Soon...)
-Database: (Soon...)
-Visualization: (Soon...)
+<br>
+`Frontend:` (React, React Router, TailwindJS)
+<br>
+`Backend:` (Soon...)
+<br>
+`Database:` (Soon...)
+<br>
+`Visualization:` (Soon...)
