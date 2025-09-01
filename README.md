@@ -1,6 +1,6 @@
 # Horent
 <center>
-  ![Dashboard Preview](src/assets/dashboard.png)
+  [Dashboard Preview](src/assets/dashboard.png)
 </center>
 
 Horent is a real estate renting dashboard designed to simplify property management and rental insights. Whether you're a landlord, property manager, or real estate agency, Horent provides an intuitive interface to monitor properties, tenants, leases, and payments in one centralized platform.
