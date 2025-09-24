@@ -1,0 +1,5 @@
+- [ ] Add UX To The Page
+- [ ] Add Animations
+- [ ] Add Dark Theme
+- [ ] Simple Functions To Calc The Numbers
+- [ ] Full Backend
