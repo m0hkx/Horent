@@ -1,5 +1,6 @@
 import Topbar from "./Topbar";
-import { BanknoteArrowUp, BanknoteArrowDown, ChevronDown, MoveUp, MoveDown } from "lucide-react";
+import { BanknoteArrowUp, BanknoteArrowDown, ChevronDown, MoveUp, MoveDown, MapPinHouse, Clock4 } from "lucide-react";
+import { faker } from '@faker-js/faker';
 
 function Overview() {
     return (
@@ -111,12 +112,209 @@ function Overview() {
                     </div>
                 </div>
 
-                <div className="bg-[#FFFFFF] row-start-7 row-span-8 col-start-7 col-span-6 rounded-[40px] drop-shadow-[0_0_2px_rgba(0,0,0,0.25)]">
+                <div className="bg-[#FFFFFF] row-start-7 row-span-8 col-start-7 col-span-6 rounded-[40px] drop-shadow-[0_0_2px_rgba(0,0,0,0.25)] flex flex-col">
+                    <div className="flex justify-between items-center flex-shrink-0">
+                        <h1 className="text-2xl p-7" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>
+                            Rents History
+                        </h1>
+
+                        <div className="border border-[#D9D9D9] w-35 h-12 rounded-full mr-7 flex items-center justify-between p-4 cursor-pointer">
+                            <p className="text-[#616161]">View All</p>
+                            <ChevronDown color="#616161" />
+                        </div>
+                    </div>
+
+                    <div className="flex-1 overflow-y-auto px-2">
+                        <div className="w-[90%] bg-[#F1F1F1] rounded-full h-18 flex items-center justify-between mx-auto my-3 px-3">
+                            <div className="flex flex-row justify-self-start">
+                                <img src={faker.image.avatar()} className="w-[55px] h-[55px] rounded-full flex self-center mr-4" alt="" />
+                                <div>
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 500 }}>{faker.person.fullName()}</p>
+                                    <div className="flex flex-row">
+                                        <MapPinHouse className="mr-1 font-bold" />
+                                        <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161]">Syracuse, Connecticut 35624</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mr-2">
+                                <p className="text-right" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>$1,200</p>
+                                <div className="flex flex-row justify-center items-center">
+                                    <Clock4 size={20} />
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161] ml-2">1 Week Ago</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-[90%] bg-[#F1F1F1] rounded-full h-18 flex items-center justify-between mx-auto my-4 px-3">
+                            <div className="flex flex-row justify-self-start">
+                                <img src={faker.image.avatar()} className="w-[55px] h-[55px] rounded-full flex self-center mr-4" alt="" />
+                                <div>
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 500 }}>{faker.person.fullName()}</p>
+                                    <div className="flex flex-row">
+                                        <MapPinHouse className="mr-1" />
+                                        <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161]">Rd. Santa Ana, Illinois 85486</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mr-2">
+                                <p className="text-right" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>$3,500</p>
+                                <div className="flex flex-row justify-center items-center">
+                                    <Clock4 size={20} />
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161] ml-2">2 Week Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-[90%] bg-[#F1F1F1] rounded-full h-18 flex items-center justify-between mx-auto my-4 px-3">
+                            <div className="flex flex-row justify-self-start">
+                                <img src={faker.image.avatar()} className="w-[55px] h-[55px] rounded-full flex self-center mr-4" alt="" />
+                                <div>
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 500 }}>{faker.person.fullName()}</p>
+                                    <div className="flex flex-row">
+                                        <MapPinHouse className="mr-1" />
+                                        <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161]">Dr. Richardson, California 62639</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mr-2">
+                                <p className="text-right" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>$2,500</p>
+                                <div className="flex flex-row justify-center items-center">
+                                    <Clock4 size={20} />
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161] ml-2">2 Week Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-[90%] bg-[#F1F1F1] rounded-full h-18 flex items-center justify-between mx-auto my-4 px-3">
+                            <div className="flex flex-row justify-self-start">
+                                <img src={faker.image.avatar()} className="w-[55px] h-[55px] rounded-full flex self-center mr-4" alt="" />
+                                <div>
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 500 }}>{faker.person.fullName()}</p>
+                                    <div className="flex flex-row">
+                                        <MapPinHouse className="mr-1" />
+                                        <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161]">St. Utica, Pennsylvania 57867</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mr-2">
+                                <p className="text-right" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>$1,500</p>
+                                <div className="flex flex-row justify-center items-center">
+                                    <Clock4 size={20} />
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161] ml-2">3 Week Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-[90%] bg-[#F1F1F1] rounded-full h-18 flex items-center justify-between mx-auto my-4 px-3">
+                            <div className="flex flex-row justify-self-start">
+                                <img src={faker.image.avatar()} className="w-[55px] h-[55px] rounded-full flex self-center mr-4" alt="" />
+                                <div>
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 500 }}>{faker.person.fullName()}</p>
+                                    <div className="flex flex-row">
+                                        <MapPinHouse className="mr-1" />
+                                        <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161]">St. Celina, Delaware 10299</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mr-2">
+                                <p className="text-right" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>$2,000</p>
+                                <div className="flex flex-row justify-center items-center">
+                                    <Clock4 size={20} />
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161] ml-2">1 Months Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-[90%] bg-[#F1F1F1] rounded-full h-18 flex items-center justify-between mx-auto my-4 px-3">
+                            <div className="flex flex-row justify-self-start">
+                                <img src={faker.image.avatar()} className="w-[55px] h-[55px] rounded-full flex self-center mr-4" alt="" />
+                                <div>
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 500 }}>{faker.person.fullName()}</p>
+                                    <div className="flex flex-row">
+                                        <MapPinHouse className="mr-1" />
+                                        <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161]">Cir. Shiloh, Hawaii 81063</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="mr-2">
+                                <p className="text-right" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>$3,000</p>
+                                <div className="flex flex-row justify-center items-center">
+                                    <Clock4 size={20} />
+                                    <p style={{ fontFamily: 'Lufga', fontWeight: 400 }} className="text-[#616161] ml-2">2 Months Ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
-                <div className="bg-[#FFFFFF] row-start-9 row-span-6 col-span-6 rounded-[40px] drop-shadow-[0_0_2px_rgba(0,0,0,0.25)]">
+                <div className="bg-[#FFFFFF] row-start-9 row-span-6 col-span-6 rounded-[40px] drop-shadow-[0_0_2px_rgba(0,0,0,0.25)] flex flex-col justify-between">
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-2xl p-7" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>Rents Paid</h1>
 
+                        <div className="border border-[#D9D9D9] w-35 h-12 rounded-full mr-7 flex items-center justify-between p-4 cursor-pointer">
+                            <p className="text-[#616161]">Aug 2025</p>
+                            <ChevronDown color="#616161" />
+                        </div>
+                    </div>
+
+                    <div className="px-3 mx-auto overflow-x-auto w-full">
+                        <div className="grid grid-cols-[1fr_2fr_1fr_1fr] text-[#616161] text-l font-[Lufga] font-normal mb-3 px-4 text-center w-full">
+                            <div>Client Name</div>
+                            <div>Property Name</div>
+                            <div>Rent</div>
+                            <div>Status</div>
+                        </div>
+
+
+                        <div className="space-y-2">
+                            <div className="grid grid-cols-[1fr_2fr_1fr_1fr] items-center p-4 text-center">
+                                <div>James Martin</div>
+                                <div>Home Build 1</div>
+                                <div>$1,000</div>
+                                <div>
+                                    <span className="text-green-600 font-medium bg-green-200 px-3 py-1 rounded-full text-sm">
+                                        Paid
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-[1fr_2fr_1fr_1fr] items-center p-4 text-center">
+                                <div>Michel Sannter</div>
+                                <div>Card View</div>
+                                <div>$1,500</div>
+                                <div>
+                                    <span className="text-yellow-600 font-medium bg-yellow-100 px-3 py-1 rounded-full text-sm">
+                                        Pending
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-[1fr_2fr_1fr_1fr] items-center p-4 text-center">
+                                <div>Carl Jonson</div>
+                                <div>Home Build 2</div>
+                                <div>$1,000</div>
+                                <div>
+                                    <span className="text-yellow-600 font-medium bg-yellow-100 px-3 py-1 rounded-full text-sm">
+                                        Pending
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-[1fr_2fr_1fr_1fr] items-center p-4 text-center">
+                                <div>Wade Warren</div>
+                                <div>Home Build 1</div>
+                                <div>$1,000</div>
+                                <div>
+                                    <span className="text-green-600 font-medium bg-green-200 px-3 py-1 rounded-full text-sm">
+                                        Paid
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
