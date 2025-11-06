@@ -7,7 +7,13 @@ function Overview() {
         <>
             <div className="grid grid-cols-12 grid-rows-14 gap-[12px] px-[5vw] py-[1vw] w-full h-full">
                 <Topbar />
-                <h1 className="row-start-2 col-span-2 self-end-safe text-4xl" style={{ fontFamily: 'Lufga', fontWeight: 600 }}>Real Estate</h1>
+                <h1
+                    className="row-start-2 col-span-8 self-end-safe text-md sm:text-xl sm:col-span-8 md:text-2xl md:col-span-5 lg:text-3xl lg:col-span-4 xl:text-4xl"
+                    style={{ fontFamily: 'Lufga', fontWeight: 600 }}
+                >
+                    Real Estate
+                </h1>
+
                 <div className="bg-[#FFFFFF] row-start-3 row-span-6 col-span-6 rounded-[40px] drop-shadow-[0_0_2px_rgba(0,0,0,0.25)] flex flex-col">
                     <div className="flex justify-between items-center">
                         <h1 className="text-2xl p-7" style={{ fontFamily: 'Lufga', fontWeight: 500 }}>Property Analytics</h1>
