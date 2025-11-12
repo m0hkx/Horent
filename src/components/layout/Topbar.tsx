@@ -11,7 +11,7 @@ const user: { name: string; email: string } = {
 function Topbar() {
     return (
         <>
-            <div className="col-span-3 bg-[#FFFFFF] w-[90%] rounded-full flex justify-center items-center pl-[1vw]">
+            <div className="xl:col-span-3 lg:col-span-4 md:col-span-5 col-span-6 bg-[#FFFFFF] w-[90%] rounded-full flex justify-center items-center pl-[1vw]">
                 <Search />
                 <Input />
             </div>
