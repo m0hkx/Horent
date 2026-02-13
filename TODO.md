@@ -3,4 +3,4 @@
 - [ ] Add Dark Theme
 - [ ] Simple Functions To Calc The Numbers
 - [ ] Full Backend
-- [ ] Scroll Bar Design
+- [✅] Scroll Bar Design
